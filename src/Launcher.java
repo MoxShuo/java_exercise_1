@@ -6,13 +6,13 @@ public class Launcher { // (1)
         System.out.print("Ecrire la commande: ");
         String scan = scanner.next();
         String  quit_variable = "quit";
-        if (scan.equals(quit_variable))
-        {
-            
-        }
-        else
+        while(!scan.equals(quit_variable))
         {
             System.out.println("Unknown Command");
+            System.out.print("Ecrire la commande: ");
+            scan = scanner.next();
+
         }
+
     }
 }
